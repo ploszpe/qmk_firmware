@@ -1,0 +1,31 @@
+{
+    "name": "QMK_devcontainer",
+    //"image": "ghcr.io/qmk/qmk_cli:latest",
+    "build": {
+         "dockerfile": "Dockerfile"
+     },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+          // Add the IDs of extensions you want installed when the container is created.
+          "extensions": ["alefragnani.project-manager",
+         "bierner.github-markdown-preview",
+         "bierner.markdown-checkbox",
+         "bierner.markdown-emoji",
+         "bierner.markdown-footnotes",
+         "bierner.markdown-mermaid",
+         "bierner.markdown-preview-github-styles",
+         "bierner.markdown-yaml-preamble",
+         "codezombiech.gitignore",
+         "donjayamanne.git-extension-pack",
+         "donjayamanne.githistory",
+         "eamodio.gitlens",
+         "EditorConfig.EditorConfig",
+         "ms-vscode.cpptools",
+         "xaver.clang-format",
+         "ziyasal.vscode-open-in-github"]
+        }
+      },
+      "remoteUser": "qmk",
+      "updateRemoteUserUID": true
+}
