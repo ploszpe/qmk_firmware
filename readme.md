@@ -11,12 +11,30 @@ Based on [Keychron's qmk fork](https://github.com/Keychron/qmk_firmware/tree/blu
 ## Improvements
  * Dev container for consistent dev env using 
  
- 
+## Compiling firmware
+
+`make keychron/k8_pro/iso/rgb:via`
  
 ## Flahing firmware from linux:
  
+# Set up python ven for qmk outside of dev container
+```
+python -m venv qmk_venv
+. qmk_venv/bin/activate
+python3 -m pip install qmk
+ ```
+ 
+# Flash from [keychorn docs](https://www.keychron.com/blogs/archived/k8-pro-factory-reset-and-firmware-flash)
+ - Unplug cable 
+ - Start qmk flash 
 
  ```
- qmk flash -n ~/Downloads/k8_pro_iso_rgb_v1.02.bin -bl dfu
+ qmk flash -n keychron_k8_pro_iso_rgb_via.bin -bl dfu
  ```
+ 
+  - Turn off keyboard  
+  - Hold "Reset" button and slide toggle to cable (towards yourself)
+  - Wait until completes
+  - Factory reset, fn + J + Z for 4 seconds 
+  
  
