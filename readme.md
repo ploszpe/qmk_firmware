@@ -1,4 +1,4 @@
-# Peters Keychorn K8 firmware fork
+# Peter's Keychorn K8 firmware fork
 
 Based on [Keychron's qmk fork](https://github.com/Keychron/qmk_firmware/tree/bluetooth_playground/keyboards/keychron), but i'm using `master` branch not `bluetooth_playground`
 
@@ -33,7 +33,7 @@ python3 -m pip install qmk
  ```
  
   - Turn off keyboard  
-  - Hold "Reset" button and slide toggle to cable (towards yourself)
+  - Hold "Reset" button and slide toggle to cable (towards yourself) TODO try escape. 
   - Wait until completes
   - Factory reset, fn + J + Z for 4 seconds 
   
